@@ -1,0 +1,146 @@
+:root{
+  --body-bg:rgb(11, 156, 23);
+  --form-bg:rgba(19, 35, 47, 0.9);
+  --white:#ffffff;
+  --label-bg:rgb(199, 24, 18);
+
+ /*varriaveis de cores primaria*/
+  --button-bg:rgb(34, 214, 94);
+  --main-: #37d1a8;
+  --main-light:#1ab;
+  --main-dark:rgb(104, 189, 48);
+  --menu:#00f700;
+  --input:#9db9a3;
+  --gray-light:#191a19;
+  --gray:#ebebeb;
+  --bold:600;/*funte negrito*/
+  --thin:300;/*funte fina*/
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body{
+  background:var(--body-bg) ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:var(--main-light);
+  transition: 0.5s ease;
+}
+a:hover{
+  color: var(--main-dark);
+}
+
+.form{
+  background: var(--form-bg);
+  padding: 40px;
+  max-width: 600px;
+  margin: 180px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px 4px rgba(0, 255, 34, 0.9);
+}
+
+.tab-group{
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+.tab-group:after{
+  content: "";
+  display: table;
+  clear:both;
+}
+.tab-group li a{
+background: rgba(11, 156, 23, 0.349);
+color: var(--gray-light);
+padding: 15px;
+display: block;
+font-size: 20px;
+width: 45%;
+float:left;
+text-align: center;
+cursor:pointer;
+}
+.tab-group li a:hover{
+  background: var(--main-light);
+  color: var(--gray);
+}
+.tab-group .active a{
+  background: var(--main-);
+  color: var(--gray);
+}
+#singnup, #login{
+  display: none;
+}
+h1{
+  text-align: center;
+  color: #ffffff;
+  font-weight: var(--thin);
+  margin: 0 0 40px;
+}
+label{
+color: var(--label-bg);
+font-size: 22px;
+position: absolute;
+transform: translateY(6px);
+left: 13px;
+pointer-events: none;
+transition: all 0.25s ease;
+
+}
+
+
+input, textarea{
+color: var(--gray);
+font-size: 22px;
+display: block;
+width: 70%;
+padding: 5px 90px;
+border: 2px solid var(--main-);
+background: none;
+transition: border-color 0.25s ease,box-shadow 0.25s ease;
+
+}
+
+inpit:focus, textarea:focus{
+outline: 0;
+border-color:var(--input) ;
+}
+
+.field-warp{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.button{
+  background: var(--button-bg);
+  color: var(--gray);
+  padding: 15px 0;
+  border: none;
+  font-size: 2rem;
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em; 
+appearance: none;
+transition: all 0.5s ease;
+}
+.button:hover, .button:focus{
+background: rgb(187, 17, 17);
+color: #1ab;
+
+}
+.button-block{
+  display: block;
+  width: 100%;
+
+}
+
+#signup{
+  display: block;
+
+}
